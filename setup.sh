@@ -17,4 +17,13 @@ else
     wget http://data.phishtank.com/data/online-valid.csv
 fi
 
+if [ -e "templates" ]; then
+    echo "Directory templates found in the directory."
+else
+    # 如果檔案不存在，則執行指令（這裡使用 echo 做示範）
+    echo "Directory templates not found. Running the command..."
+    # 在這裡替換您想要執行的指令
+    mkdir templates
+fi
+
 flask run --host=0.0.0.0
