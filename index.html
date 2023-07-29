@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    h2 {
+      color: #000000;
+      font-size: 1.2rem;
+      font-family: Arial, sans-serif;
+      list-style-type: none;
+      padding: 1rem;
+      margin: 0.5rem 0rem;
+      background-color: #d8d8d8;
+      font-family: Arial, sans-serif;
+      border-radius: 10px;
+    }
+    h3 {
+      color: #000000;
+      font-size: 1.2rem;
+      font-family: Arial, sans-serif;
+      list-style-type: none;
+      padding: 1rem;
+      margin: 0.5rem 0rem;
+      background-color: #d8d8d8;
+      font-family: Arial, sans-serif;
+      border-radius: 10px;
+    }
+    ul li {
+      list-style-type: none;
+      color: #484848;
+      text-decoration: none;
+      padding: 1rem;
+      margin: 0.5rem 0rem;
+      background-color: #ececec;
+      font-size: 1.2rem;
+      font-family: Arial, sans-serif;
+    }
+    .senc {
+      margin-left: 5%;
+    }
+    @-webkit-keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      70% {
+        opacity: 1;
+      }
+      71% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    #score {
+      animation: blink 1s linear infinite;
+    }
+  </style>
+  <body style="margin: 50px">
+    <h1 style="text-align: center; color: red" id="score">
+      注意！！我需要你的注意！！<br />
+      你的個資正在面臨洩漏風險中！！<br />
+      此網站的個資洩漏風險為 高 ！！<br />
+    </h1>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+	    <div class="accordion-item" style="border: 0ch">
+        <h1 class="accordion-header">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne"
+            aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne"
+            style="background-color: #eee"
+          >
+            More Info
+          </button>
+        </h1>
+        <div
+          id="panelsStayOpen-collapseOne"
+          class="accordion-collapse collapse"
+        >
+          <div class="accordion-body">
+            <h2>Have I Been Pwned?</h2>
+            <ul class="list-group list-group-horizontal">
+              <li
+                class="list-group-item"
+                style="
+                  min-width: max-content;
+                  width: 30%;
+                  text-align: center;
+                  background-color: #f1f1f1;
+                "
+              >
+                DataClasses
+              </li>
+              <li class="list-group-item" style="width: 80%">$DataClasses</li>
+            </ul>
+            <ul class="list-group list-group-horizontal">
+              <li
+                class="list-group-item"
+                style="
+                  min-width: max-content;
+                  width: 30%;
+                  text-align: center;
+                  background-color: #f1f1f1;
+                "
+              >
+                PwnCount
+              </li>
+              <li class="list-group-item" style="width: 80%">$PwnCount</li>
+            </ul>
+            <h2>Is it Phish?</h2>
+            <ul class="list-group">
+              <li class="list-group-item">$Phish</li>
+            </ul>
+            <h2>VirusTotal</h2>
+            <h3 class="senc">Last Analysis Stats</h3>
+            <ul class="list-group list-group-horizontal senc">
+              <li
+                class="list-group-item"
+                style="
+                  min-width: max-content;
+                  width: 30%;
+                  text-align: center;
+                  background-color: #f1f1f1;
+                "
+              >
+                harmless
+              </li>
+              <li class="list-group-item" style="width: 80%">$las_harmless</li>
+            </ul>
+            <ul class="list-group list-group-horizontal senc">
+              <li
+                class="list-group-item"
+                style="
+                  min-width: max-content;
+                  width: 30%;
+                  text-align: center;
+                  background-color: #f1f1f1;
+                "
+              >
+                malicious
+              </li>
+              <li class="list-group-item" style="width: 80%">$las_malicious</li>
+            </ul>
+            <ul class="list-group list-group-horizontal senc">
+              <li
+                class="list-group-item"
+                style="
+                  min-width: max-content;
+                  width: 30%;
+                  text-align: center;
+                  background-color: #f1f1f1;
+                "
+              >
+                suspicious
+              </li>
+              <li class="list-group-item" style="width: 80%">
+                $las_suspicious
+              </li>
+            </ul>
+            <ul class="list-group list-group-horizontal senc">
+              <li
+                class="list-group-item"
+                style="
+                  min-width: max-content;
+                  width: 30%;
+                  text-align: center;
+                  background-color: #f1f1f1;
+                "
+              >
+                timeout
+              </li>
+              <li class="list-group-item" style="width: 80%">$las_timeout</li>
+            </ul>
+            <ul class="list-group list-group-horizontal senc">
+              <li
+                class="list-group-item"
+                style="
+                  min-width: max-content;
+                  width: 30%;
+                  text-align: center;
+                  background-color: #f1f1f1;
+                "
+              >
+                undetected
+              </li>
+              <li class="list-group-item" style="width: 80%">
+                $las_undetected
+              </li>
+            </ul>
+            <h3 class="senc">Last Https Certificate</h3>
+            <ul class="list-group senc">
+              <li class="list-group-item">$last_https_certificate</li>
+            </ul>
+            <h3 class="senc">Registrar</h3>
+            <ul class="list-group senc">
+              <li class="list-group-item">$registrar</li>
+            </ul>
+            <h3 class="senc">Reputation</h3>
+            <ul class="list-group senc">
+              <li class="list-group-item">$reputation</li>
+            </ul>
+            <h3 class="senc">Total Votes</h3>
+            <ul class="list-group list-group-horizontal senc">
+              <li
+                class="list-group-item"
+                style="
+                  min-width: max-content;
+                  width: 30%;
+                  text-align: center;
+                  background-color: #f1f1f1;
+                "
+              >
+                harmless
+              </li>
+              <li class="list-group-item" style="width: 80%">$tv_harmless</li>
+            </ul>
+            <ul class="list-group list-group-horizontal senc">
+              <li
+                class="list-group-item"
+                style="
+                  min-width: max-content;
+                  width: 30%;
+                  text-align: center;
+                  background-color: #f1f1f1;
+                "
+              >
+                malicious
+              </li>
+              <li class="list-group-item" style="width: 80%">$tv_malicious</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    var score = parseInt($score);
+	  console.log(score)
+	  console.log(typeof(score))
+    if (score < 34) {
+      var x = document.getElementById("score");
+      x.innerHTML = "此網站的個資洩漏風險等級為 低 <br>";
+      x.style.setProperty("color", "green");
+      x.getAnimations()[0].pause();
+	      }else if(score<67){
+var x=document.getElementById("score");
+				x.innerHTML="注意！注意！<br />你的個資可能正在面臨洩漏風險中！<br />此網站的個資洩漏風險等級為 中 ！<br />";
+				x.style.setProperty("color","orange");
+				x.getAnimations()[0].pause();
+			}
+  </script>
+</html>
